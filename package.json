@@ -1,6 +1,7 @@
 {
   "name": "backend-peminjaman",
   "version": "1.0.0",
+  "types": "module",
   "description": "Backend sistem peminjaman barang sekolah",
   "main": "server.js",
   "scripts": {

@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require("../database/db");
 
 // Scan RFID → cari data siswa
-router.get("/:tag", (req, res) => {
+router.get("/rfid/:tag", (req, res) => {
   const { tag } = req.params;
   db.query("SELECT * FROM siswa WHERE rfid_tag = ?", [tag], (err, result) => {
     if (err) return res.status(500).json({ error: err.message });
@@ -13,3 +13,5 @@ router.get("/:tag", (req, res) => {
 });
 
 module.exports = router;
+
+
