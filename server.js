@@ -6,7 +6,7 @@ const barangRoute = require("./routes/barang");
 const peminjamanRoute = require("./routes/peminjaman");
 const rfidRoute = require("./routes/rfid");
 const guruRoute = require("./routes/guru");
-const mapelRoute = require("./routes/mapel.js");
+const mapelRoute = require("./routes/mapel");
 
 const app = express();
 app.use(cors());
